@@ -28,6 +28,7 @@ public class DateFormateClass {
 					SimpleDateFormat sim = new SimpleDateFormat("dd-MM-YYYY");
 					String format = sim.format(date);
 					System.out.println(format);
+					System.out.println("Done");
 
 				}
 
