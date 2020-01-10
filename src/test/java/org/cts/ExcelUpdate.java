@@ -20,11 +20,12 @@ public static void main(String[] args) throws Throwable {
 	Row r = S.getRow(0);
 	Cell c = r.getCell(0);
 	String name = c.getStringCellValue();
-	if (name.contains("Name")) {
-		c.setCellValue("Emp");
+	if (name.contains("Emp")) {
+		c.setCellValue("Name");
 	}
 	FileOutputStream o = new FileOutputStream(loc);
 	w.write(o);
 	System.out.println("Done");
+	System.out.println(" Updated suceesfully");
 }
 }
